@@ -9,4 +9,4 @@ LABEL maintainer="ownCloud GmbH <devops@owncloud.com>" \
   org.opencontainers.image.url="https://github.com/owncloud-ci/golang" \
   org.opencontainers.image.source="https://github.com/owncloud-ci/golang"
 
-RUN apk add bash make git curl gcc musl-dev
+RUN apk add bash make git curl gcc musl-dev libc-dev
