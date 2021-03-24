@@ -83,7 +83,7 @@ def docker(config):
     'depends_on': [],
     'trigger': {
       'ref': [
-        'refs/heads/master',
+        'refs/heads/main',
         'refs/pull/**',
       ],
     },
@@ -117,7 +117,7 @@ def manifest(config):
     'depends_on': [],
     'trigger': {
       'ref': [
-        'refs/heads/master',
+        'refs/heads/main',
         'refs/tags/**',
       ],
     },
@@ -176,7 +176,7 @@ def notification(config):
     'depends_on': [],
     'trigger': {
       'ref': [
-        'refs/heads/master',
+        'refs/heads/main',
         'refs/tags/**',
       ],
       'status': [
@@ -223,7 +223,7 @@ def publish(config):
     },
     'when': {
       'ref': [
-        'refs/heads/master',
+        'refs/heads/main',
         'refs/tags/**',
       ],
     },
