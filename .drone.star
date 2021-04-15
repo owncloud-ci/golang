@@ -158,7 +158,7 @@ def documentation(config):
         },
         'when': {
           'ref': [
-            'refs/heads/master',
+            'refs/heads/main',
           ],
         },
       },
@@ -166,7 +166,7 @@ def documentation(config):
     'depends_on': [],
     'trigger': {
       'ref': [
-        'refs/heads/master',
+        'refs/heads/main',
         'refs/tags/**',
         'refs/pull/**',
       ],
