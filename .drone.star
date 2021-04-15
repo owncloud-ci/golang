@@ -15,7 +15,7 @@ def main(ctx):
     'arch': None,
     'trigger': [],
     'repo': ctx.repo.name,
-    'description': 'Go on Alpine image for ownCloud CI',
+    'description': 'Go on Alpine for ownCloud CI',
   }
 
   stages = []
@@ -153,7 +153,7 @@ def documentation(config):
             'from_secret': 'public_username',
           },
           'PUSHRM_FILE': 'README.md',
-          'PUSHRM_TARGET': 'owncloud/${DRONE_REPO_NAME}',
+          'PUSHRM_TARGET': 'owncloudci/${DRONE_REPO_NAME}',
           'PUSHRM_SHORT': config['description'],
         },
         'when': {

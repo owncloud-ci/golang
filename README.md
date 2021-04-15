@@ -1,4 +1,4 @@
-# ownCloud: Ubuntu
+# Go on Alpine for ownCloud CI
 
 [![Build Status](https://img.shields.io/drone/build/owncloud-ci/golang?logo=drone&server=https%3A%2F%2Fdrone.owncloud.com)](https://drone.owncloud.com/owncloud-ci/golang)
 [![Docker Hub](https://img.shields.io/docker/v/owncloudci/golang?logo=docker&label=dockerhub&sort=semver&logoColor=white)](https://hub.docker.com/r/owncloudci/golang)
@@ -6,7 +6,7 @@
 [![Source: GitHub](https://img.shields.io/badge/source-github-blue.svg?logo=github&logoColor=white)](https://github.com/owncloud-ci/golang)
 [![License: MIT](https://img.shields.io/github/license/owncloud-ci/golang)](https://github.com/owncloud-ci/golang/blob/master/LICENSE)
 
-ownCloud Docker Ubuntu base image based on the [official Golang](https://registry.hub.docker.com/_/golang/) image.
+ownCloud CI Alpine Go image based on the [official Golang](https://registry.hub.docker.com/_/golang/) image.
 
 ## Quick reference
 

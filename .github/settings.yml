@@ -1,7 +1,7 @@
 ---
 repository:
   name: golang
-  description: Go on Alpine image for ownCloud CI
+  description: Go on Alpine for ownCloud CI
   topics: docker, golang, alpine
 
   private: false
