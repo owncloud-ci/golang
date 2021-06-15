@@ -61,5 +61,6 @@ branches:
       restrictions:
         apps:
           - renovate
+        users: []
         teams:
           - bot
