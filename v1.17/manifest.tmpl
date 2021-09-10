@@ -1,0 +1,16 @@
+image: owncloudci/golang:1.17
+manifests:
+  - image: owncloudci/golang:1.17-amd64
+    platform:
+      architecture: amd64
+      os: linux
+  - image: owncloudci/golang:1.17-arm64v8
+    platform:
+      architecture: arm64
+      variant: v8
+      os: linux
+  - image: owncloudci/golang:1.17-arm32v7
+    platform:
+      architecture: arm
+      variant: v7
+      os: linux
