@@ -6,9 +6,8 @@
       "description": "Disable major version update",
       "matchDatasources": ["docker"],
       "matchPackagePatterns": ["(amd64|arm32v7|arm64v8)/)?golang"],
-      "major": {
-        "enabled": false
-      }
+      "matchUpdateTypes": ["major", "minor"],
+      "enabled": false
     }
   ]
 }
