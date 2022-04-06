@@ -1,0 +1,12 @@
+FROM arm64v8/golang:1.18-alpine@sha256:fe66e641602dfb60f5c746b57bde60fcafce94b44f2bc2ca2bdc1e3711b24911
+
+LABEL maintainer="ownCloud GmbH <devops@owncloud.com>" \
+  org.opencontainers.image.title="ownCloud CI Go" \
+  org.opencontainers.image.vendor="ownCloud GmbH" \
+  org.opencontainers.image.authors="ownCloud GmbH" \
+  org.opencontainers.image.description="ownCloud CI Go" \
+  org.opencontainers.image.documentation="https://github.com/owncloud-ci/golang.git" \
+  org.opencontainers.image.url="https://github.com/owncloud-ci/golang" \
+  org.opencontainers.image.source="https://github.com/owncloud-ci/golang"
+
+RUN apk add bash make git curl gcc musl-dev libc-dev binutils-gold ncurses
