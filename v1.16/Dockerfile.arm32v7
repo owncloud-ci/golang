@@ -9,4 +9,11 @@ LABEL maintainer="ownCloud GmbH <devops@owncloud.com>" \
   org.opencontainers.image.url="https://github.com/owncloud-ci/golang" \
   org.opencontainers.image.source="https://github.com/owncloud-ci/golang"
 
-RUN apk add bash make git curl gcc musl-dev libc-dev binutils-gold ncurses
+ARG RETRY_VERSION
+
+# renovate: datasource=github-releases depName=owncloud-ci/retry
+ENV RETRY_VERSION="${RETRY_VERSION:-v2.0.0}"
+
+RUN apk add bash make git curl gcc musl-dev libc-dev binutils-gold ncurses && \
+  curl -SsL -o /usr/local/bin/retry "https://github.com/owncloud-ci/retry/releases/download/v${RETRY_VERSION##v}/retry" && \
+  chmod 755 /usr/local/bin/retry
