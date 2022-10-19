@@ -1,9 +1,8 @@
 def main(ctx):
   versions = [
     'latest',
-    '1.16',
-    '1.17',
-    '1.18'
+    '1.18',
+    '1.19'
   ]
 
   arches = [
