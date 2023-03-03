@@ -14,7 +14,7 @@ ownCloud CI Alpine Go image based on the [official Golang](https://registry.hub.
   [owncloud-ci/golang](https://github.com/owncloud-ci/golang/issues)
 
 - **Supported architectures:**\
-  `amd64`, `arm32v7`, `arm64v8`
+  `amd64`, `arm64v8`
 
 ## Docker Tags and respective Dockerfile links
 

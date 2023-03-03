@@ -7,7 +7,6 @@ def main(ctx):
 
   arches = [
     'amd64',
-    'arm32v7',
     'arm64v8',
   ]
 
@@ -45,9 +44,6 @@ def main(ctx):
 
       if config['arch'] == 'arm64v8':
         config['platform'] = 'arm64'
-
-      if config['arch'] == 'arm32v7':
-        config['platform'] = 'arm'
 
       config['internal'] = '%s-%s' % (ctx.build.commit, config['tag'])
 
