@@ -1,4 +1,4 @@
-FROM arm64v8/golang:1.19-alpine@sha256:c57fbdf69ba884d04fafd5fc2550b574bf58244cf73f1851de035d79d244be73
+FROM arm64v8/golang:1.19-alpine@sha256:f909eec239e1454ba69e0d457985e911c5eff746d11be185df7971cb94d33a74
 
 LABEL maintainer="ownCloud GmbH <devops@owncloud.com>" \
   org.opencontainers.image.title="ownCloud CI Go" \
