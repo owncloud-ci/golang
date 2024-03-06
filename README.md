@@ -19,8 +19,8 @@ ownCloud CI Alpine Go image based on the [official Golang](https://registry.hub.
 ## Docker Tags and respective Dockerfile links
 
 - [`latest`](https://github.com/owncloud-ci/golang/blob/main/latest/Dockerfile.amd64) available as `owncloudci/golang:latest`
+- [`1.22`](https://github.com/owncloud-ci/golang/blob/main/v1.22/Dockerfile.amd64) available as `owncloudci/golang:1.22`
 - [`1.21`](https://github.com/owncloud-ci/golang/blob/main/v1.21/Dockerfile.amd64) available as `owncloudci/golang:1.21`
-- [`1.20`](https://github.com/owncloud-ci/golang/blob/main/v1.20/Dockerfile.amd64) available as `owncloudci/golang:1.20`
 
 ## Default volumes
 
