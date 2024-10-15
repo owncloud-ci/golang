@@ -14,6 +14,6 @@ ARG RETRY_VERSION
 # renovate: datasource=github-releases depName=owncloud-ci/retry
 ENV RETRY_VERSION="${RETRY_VERSION:-v2.0.0}"
 
-RUN apk add bash make git curl gcc musl-dev libc-dev binutils-gold ncurses grep inotify-tools && \
+RUN apk add bash make git curl gcc musl-dev libc-dev binutils-gold ncurses grep inotify-tools vips-dev && \
   curl -SsfL -o /usr/local/bin/retry "https://github.com/owncloud-ci/retry/releases/download/v${RETRY_VERSION##v}/retry" && \
   chmod 755 /usr/local/bin/retry
