@@ -59,7 +59,6 @@ def main(ctx):
 
   after = [
     documentation(config),
-    notification(config),
   ]
 
   for s in stages:
@@ -165,49 +164,6 @@ def documentation(config):
         'refs/heads/main',
         'refs/tags/**',
         'refs/pull/**',
-      ],
-    },
-  }
-
-def notification(config):
-  steps = [{
-    'name': 'notify',
-    'image': 'plugins/slack',
-    'settings': {
-      'webhook': {
-        'from_secret': 'rocketchat_talk_webhook',
-      },
-      'channel': 'builds',
-    },
-    'when': {
-      'status': [
-        'success',
-        'failure',
-      ],
-    },
-  }]
-
-  return {
-    'kind': 'pipeline',
-    'type': 'docker',
-    'name': 'notification',
-    'platform': {
-      'os': 'linux',
-      'arch': 'amd64',
-    },
-    'clone': {
-      'disable': True,
-    },
-    'steps': steps,
-    'depends_on': [],
-    'trigger': {
-      'ref': [
-        'refs/heads/main',
-        'refs/tags/**',
-      ],
-      'status': [
-        'success',
-        'failure',
       ],
     },
   }
